@@ -15,7 +15,7 @@ beforeEach(async () => {
   accounts = await web3.eth.getAccounts();
   
   // Use one of those accounts to deploy the contract
-  inbox = await new web3.eth.Contract(JSON.parse(interface))  // tells web2 about the interface(methods) of the contract
+  inbox = await new web3.eth.Contract(JSON.parse(interface))  // tells web3 about the interface(methods) of the contract
     .deploy({ data: bytecode, arguments: [defaultMessage] }) //passes bytecode for deploying a new copy of this contract, also passes initialMessage
     .send({ from: accounts[0], gas: '1000000'});  //sends the transation that creates this contract - 'from' specifies the account from which we want to deploy the contract. set gas price
 
