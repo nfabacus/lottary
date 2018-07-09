@@ -1,4 +1,4 @@
-# Simple Smart Contract with Solidity
+# Simple Smart Contract with Solidity 2: Lottery Dapp
 
 1. Create a basic contract using Remix
   http://remix.ethereum.org
